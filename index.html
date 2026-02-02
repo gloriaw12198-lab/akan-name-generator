@@ -3,32 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akan name generator</title>
+    <title>Akan Name Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Akan Name Generator</h1>
-    <div class="Date of birth">
-    <p><em>Enter your date of birth and gender to get your Akan name</em></p>
-    <form action="name-form">
-        <label for="DOB">Date of birth:</label>
-        <input type="date"  id="Date of birth">
-        </div>
-        <div class="Gender">
-            <label for="Gender">Gender:</label>
-        <select id="  Gender" id="Gender">
-            <option value="male"> male</option>
-            <option value="female">female</option>
-        </select>
-        </div>
-<button type="submit">Get Akan Name</button>
-    </form>
-    <div class="results">
-        
-        <p id="akan name"></p>
-    </div>
-    
-    <script src="script.js"></script>
 
+<body>
+
+<header>
+    Welcome to this page where you get your Akan name just by filling in some details
+</header>
+
+<h1>Akan Name Generator</h1>
+<p><em>Enter your date of birth and gender to get your Akan name</em></p>
+
+<form id="name-form">
+
+    <div class="dob">
+        <label for="dob">Date of birth:</label>
+        <input type="date" id="dob" required>
+    </div>
+
+    <div class="gender">
+        <label for="gender">Gender:</label>
+        <select id="gender" required>
+            <option value="">-- Select gender --</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+    </div>
+
+    <button type="submit">Get Akan Name</button>
+</form>
+
+<div class="results">
+    <p id="akan-name"></p>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

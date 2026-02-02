@@ -1,29 +1,55 @@
+document.getElementById("name-form").addEventListener("submit", function (e) {
+    e.preventDefault();
 
-function generateAkanName() {
-    // Get input values
-    const dob = document.getElementById("Date of birth").value;
-    const gender = document.getElementById("Gender").value;
+    const dob = document.getElementById("dob").value;
+    const gender = document.getElementById("gender").value;
+    const result = document.getElementById("akan-name");
 
-    // Parse date of birth
-    const birthDate = new Date(dob);
-    const day = birthDate.getDay(); // 0 = Sunday, 1 = Monday, ...
+    if (dob === "" || gender === "") {
+        result.textContent = "Please enter your date of birth and select a gender.";
+        return;
+    }
 
-    // Akan names based on day of the week
-    const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-    const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+    const date = new Date(dob);
+    const day = date.getDay();
 
-    // Determine Akan name
-    let akanName;
+    const days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+    ];
+
+    const maleNames = [
+        "Kwasi",
+        "Kwadwo",
+        "Kwabena",
+        "Kwaku",
+        "Yaw",
+        "Kofi",
+        "Kwame"
+    ];
+
+    const femaleNames = [
+        "Akosua",
+        "Adwoa",
+        "Abenaa",
+        "Akua",
+        "Yaa",
+        "Afua",
+        "Ama"
+    ];
+
+    let akanName = "";
+
     if (gender === "male") {
         akanName = maleNames[day];
     } else if (gender === "female") {
         akanName = femaleNames[day];
-    } else {
-        akanName = "Please select a gender.";
     }
 
-    // Display the result
-    document.getElementById("akan name").innerText = `Your Akan name is: ${akanName}`;
-}
-return 
-
+    result.textContent = `You were born on a ${days[day]}. Your Akan name is ${akanName}.`;
+});

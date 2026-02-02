@@ -2,7 +2,12 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: aqua;
     text-align: center;
-    
+    border: dotted;
+    padding: 250px;
+    width: 500px;
+header{
+    text-align: center;
+}
     
 }
 #name -form{
