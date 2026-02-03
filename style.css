@@ -37,6 +37,7 @@ label {
   display: block;
   margin-bottom: 5px;
   color: #ff66b2;
+  font-weight: bold;
 }
 
 input[type="date"], select {
