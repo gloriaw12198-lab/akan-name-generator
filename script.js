@@ -1,4 +1,5 @@
-document.getElementById("name-form").addEventListener("submit", function (e) {
+document.getElementById("name-form")
+.addEventListener("submit", function (e) {
     e.preventDefault();
 
     const dob = document.getElementById("dob").value;
