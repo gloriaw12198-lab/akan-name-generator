@@ -1,15 +1,12 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: aqua;
+    background-color:aqua ;
+    color: black;
     text-align: center;
     border: dotted;
-    padding: 250px;
+    padding: 20px;
     width: 500px;
-header{
-    text-align: center;
-}
-    
-}
+]
 #name -form{
 padding: 30px;
 border-radius: 20px;
