@@ -26,8 +26,11 @@ h1 {
   margin: 0 auto;
 }
 
-.dob, .gender {
+.dob  {
   margin-bottom: 15px;
+}
+.gender {
+    margin-bottom: 15px;
 }
 
 label {
