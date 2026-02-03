@@ -1,56 +1,64 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:aqua ;
-    color: black;
-    text-align: center;
-    border: dotted;
-    padding: 20px;
-    width: 500px;
-    box-shadow: 0 4px 8px ;
-    
-]
-header{
-    color:#2c3e50
-    margin-bottom: 20px;
+
+body {
+  font-family: 'Comic Sans MS', cursive;
+  background-color: #ffe6f0;
+  text-align: center;
+  padding: 20px;
 }
 
-.explanations{
-    text-align: centre;
-    padding: 20px;
-    font: size 16px;
-    color: brown;
-    background-color:#fff
-    
-}
-#name -form{
-padding: 100px;
-border-radius: 20px;
-box-shadow: 0 4px 10px rgba (0,0,0,0.5);
-width: 350px;
-margin: 40px;
-color: brown;
-}
-label{
-    display: inline-block;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 2px solid black ;
-    text-align: center;
-    width: 120px;
-    font-weight: bold;
-
+header {
+  background-color: #ff99cc;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
-button{
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: blanchedalmond;
-    cursor: pointer;
-border: none;
+h1 {
+  color: #ff66b2;
 }
-.results{
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 20px;
-    text-align: center;
+
+#name-form {
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #ff99cc;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
 }
+
+.dob, .gender {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ff66b2;
+}
+
+input[type="date"], select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ff99cc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #ff66b2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff99cc;
+}
+
+.results {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ff66b2;
+}
+
