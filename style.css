@@ -6,9 +6,18 @@ body{
     border: dotted;
     padding: 20px;
     width: 500px;
+    box-shadow: 0 4px 8px ;
+    
 ]
+.explanations{
+    text-align: centre;
+    padding: 20px;
+    font: size 16px;
+    color: #000;
+    
+}
 #name -form{
-padding: 30px;
+padding: 100px;
 border-radius: 20px;
 box-shadow: 0 4px 10px rgba (0,0,0,0.5);
 width: 350px;
@@ -28,7 +37,9 @@ label{
 button{
     padding: 10px 20px;
     border-radius: 5px;
+    background-color: blanchedalmond;
     cursor: pointer;
+border: none;
 }
 .results{
     font-size: 24px;
